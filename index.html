@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AWS Resource Automation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>AWS Resource Automation</h1>
+
+        <p>
+            Manage AWS S3 and EC2 resources using a web interface
+        </p>
+
+    </header>
+
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <div class="grid">
+
+
+            <!-- =========================
+                 S3 MANAGEMENT
+            ========================== -->
+
+            <section class="card">
+
+                <h2>🪣 S3 Management</h2>
+
+
+                <!-- List Buckets -->
+
+                <div class="operation">
+
+                    <h3>List S3 Buckets</h3>
+
+                    <button
+                        type="button"
+                        onclick="listBuckets()">
+
+                        List Buckets
+
+                    </button>
+
+                </div>
+
+
+                <!-- Create Bucket -->
+
+                <div class="operation">
+
+                    <h3>Create S3 Bucket</h3>
+
+                    <input
+                        type="text"
+                        id="bucketName"
+                        placeholder="Enter bucket name">
+
+                    <button
+                        type="button"
+                        onclick="createBucket()">
+
+                        Create Bucket
+
+                    </button>
+
+                </div>
+
+
+                <!-- Upload File -->
+
+                <div class="operation">
+
+                    <h3>Upload File</h3>
+
+                    <input
+                        type="text"
+                        id="uploadBucketName"
+                        placeholder="Enter bucket name">
+
+                    <input
+                        type="file"
+                        id="fileInput">
+
+                    <button
+                        type="button"
+                        class="success"
+                        onclick="uploadFile()">
+
+                        Upload File
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 EC2 MANAGEMENT
+            ========================== -->
+
+            <section class="card">
+
+                <h2>💻 EC2 Management</h2>
+
+
+                <!-- List Instances -->
+
+                <div class="operation">
+
+                    <h3>List EC2 Instances</h3>
+
+                    <button
+                        type="button"
+                        onclick="listInstances()">
+
+                        List Instances
+
+                    </button>
+
+                </div>
+
+
+                <!-- Launch Instance -->
+
+                <div class="operation">
+
+                    <h3>Launch EC2 Instance</h3>
+
+                    <input
+                        type="text"
+                        id="amiId"
+                        placeholder="Enter AMI ID">
+
+                    <button
+                        type="button"
+                        class="success"
+                        onclick="launchInstance()">
+
+                        Launch EC2
+
+                    </button>
+
+                </div>
+
+
+                <!-- Stop / Terminate -->
+
+                <div class="operation">
+
+                    <h3>Manage EC2 Instance</h3>
+
+                    <input
+                        type="text"
+                        id="instanceId"
+                        placeholder="Enter Instance ID">
+
+                    <button
+                        type="button"
+                        onclick="stopInstance()">
+
+                        Stop EC2
+
+                    </button>
+
+                    <button
+                        type="button"
+                        class="danger"
+                        onclick="terminateInstance()">
+
+                        Terminate EC2
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =========================
+                 RESULT
+            ========================== -->
+
+            <section class="card result-card">
+
+                <div class="result-header">
+
+                    <h2>📋 Operation Result</h2>
+
+                    <button
+                        type="button"
+                        class="clear-button"
+                        onclick="clearOutput()">
+
+                        Clear
+
+                    </button>
+
+                </div>
+
+                <pre id="output">Waiting for operation...</pre>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
