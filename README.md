@@ -469,115 +469,69 @@ Unlike the web application, the CLI communicates directly with AWS through Boto3
 
 ---
 
-# 6. Screenshots of Important Configurations and Results
+# ## 6. Screenshots of Important Configurations and Results
 
-## Screenshot 1 — Project Folder Structure
-
-
-
-screenshots/01-project-structure.png
-
+### Screenshot 1 — Project Folder Structure
+![Project Folder Structure](screenshots/01-project-structure.png)
 
 ---
 
-## Screenshot 2 — IAM Role
-
-
-
-screenshots/02-iam-role.png
-
+### Screenshot 2 — IAM Role
+![IAM Role](screenshots/02-iam-role.png)
 
 ---
 
-## Screenshot 3 — Lambda Function
-
-
-
-screenshots/03-lambda-function.png
-
+### Screenshot 3 — Lambda Function
+![Lambda Function](screenshots/03-lambda-function.png)
 
 ---
 
-## Screenshot 4 — Lambda Successful Test
-
+### Screenshot 4 — Lambda Successful Test
+Test event used:
 
 ```json
 {
-    "action": "list_buckets"
+  "action": "list_buckets"
 }
 ```
 
-
-
-screenshots/04-lambda-test.png
-
+![Lambda Successful Test](screenshots/04-lambda-test.png)
 
 ---
 
-## Screenshot 5 — API Gateway
-
-
-
-screenshots/05-api-gateway.png
-
+### Screenshot 5 — API Gateway
+![API Gateway](screenshots/05-api-gateway.png)
 
 ---
 
-## Screenshot 6 — Postman API Test
+### Screenshot 6 — Postman API Test
+Operation tested: **List S3 Buckets**
 
-
-
-List S3 Buckets
-
-
-
-
-screenshots/06-postman-test.png
-
+![Postman API Test](screenshots/06-postman-test.png)
 
 ---
 
-## Screenshot 7 — S3 Bucket Created
-
-
-
-screenshots/07-s3-bucket.png
-
+### Screenshot 7 — S3 Bucket Created
+![S3 Bucket Created](screenshots/07-s3-bucket.png)
 
 ---
 
-## Screenshot 8 — Web Application
-
-
-
-screenshots/08-web-application.png
-
+### Screenshot 8 — Web Application
+![Web Application](screenshots/08-web-application.png)
 
 ---
 
-## Screenshot 9 — Web Application Result
+### Screenshot 9 — Web Application Result
+Operation tested: **List EC2 Instances**
 
-
-
-List EC2 Instances
-
-
-
-
-screenshots/09-web-operation-result.png
-
+![Web Application Result](screenshots/09-web-operation-result.png)
 
 ---
 
----
-
-## Screenshot 10 — CLI EC2 Operation
-
-
-screenshots/10-cli-ec2-operation.png
+### Screenshot 10 — CLI EC2 Operation
+![CLI EC2 Operation](screenshots/10-cli-ec2-operation.png)
 
 
----
 
 # 7. How to Run or Deploy the Project
 
