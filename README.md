@@ -474,27 +474,27 @@ Unlike the web application, the CLI communicates directly with AWS through Boto3
 ## Screenshot 1 — Project Folder Structure
 
 
-```text
+
 screenshots/01-project-structure.png
-```
+
 
 ---
 
 ## Screenshot 2 — IAM Role
 
 
-```text
+
 screenshots/02-iam-role.png
-```
+
 
 ---
 
 ## Screenshot 3 — Lambda Function
 
 
-```text
+
 screenshots/03-lambda-function.png
-```
+
 
 ---
 
@@ -508,64 +508,64 @@ screenshots/03-lambda-function.png
 ```
 
 
-```text
+
 screenshots/04-lambda-test.png
-```
+
 
 ---
 
 ## Screenshot 5 — API Gateway
 
 
-```text
+
 screenshots/05-api-gateway.png
-```
+
 
 ---
 
 ## Screenshot 6 — Postman API Test
 
 
-```text
+
 List S3 Buckets
-```
 
 
-```text
+
+
 screenshots/06-postman-test.png
-```
+
 
 ---
 
 ## Screenshot 7 — S3 Bucket Created
 
 
-```text
+
 screenshots/07-s3-bucket.png
-```
+
 
 ---
 
 ## Screenshot 8 — Web Application
 
 
-```text
+
 screenshots/08-web-application.png
-```
+
 
 ---
 
 ## Screenshot 9 — Web Application Result
 
 
-```text
+
 List EC2 Instances
-```
 
 
-```text
+
+
 screenshots/09-web-operation-result.png
-```
+
 
 ---
 
@@ -573,9 +573,9 @@ screenshots/09-web-operation-result.png
 
 ## Screenshot 10 — CLI EC2 Operation
 
-```text
+
 screenshots/10-cli-ec2-operation.png
-```
+
 
 ---
 
